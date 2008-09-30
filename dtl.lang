@@ -3,13 +3,13 @@
   <metadata>
     <property name="mimetypes">text/html;</property>
     <property name="globs">*.dtl;*.html;</property>
-    <property name="line-comment-start">#</property>
-    <property name="block-comment-start">{#</property>
-    <property name="block-comment-end">#}</property>
+    <property name="line-comment-start">**</property>
+    <property name="block-comment-start">**</property>
+    <property name="block-comment-end">**</property>
   </metadata>
 
   <styles>
-    <style id="embedded"         _name="Comment" map-to="def:template"/>
+    <style id="embedded"         _name="Comment" map-to="def:embedded"/>
     <style id="comment"         _name="Comment" map-to="def:comment"/>
     <style id="error"           _name="Error" map-to="def:error"/>
     <style id="variable"        _name="Variable" map-to="def:identifier"/>
@@ -40,8 +40,8 @@
     </context>
 
     <context id="bash-line-comment" style-ref="comment" end-at-line-end="true" extend-parent="false">
-      <start>#</start>
-      <end>#</end>
+      <start>{#</start>
+      <end>#}</end>
       <include>
         <context ref="def:in-line-comment"/>
       </include>
@@ -71,7 +71,7 @@
     </context>
 
     <context id="variable" style-ref="variable">
-      <match>[$]+[a-zA-Z_][a-zA-Z0-9_]*</match>
+      <match>[|]+[a-zA-Z_][a-zA-Z0-9_]*</match>
     </context>
 
     <context id="array-operators" style-ref="variable">
@@ -88,7 +88,7 @@
             <context ref="string-var"/>
           </include>
         </context>
-        <context id="backwards-curly-var" style-ref="variable">
+        <context id="backwards-curly-var" style-ref="boolean">
           <start>\${</start>
           <end>}</end>
           <include>
@@ -174,6 +174,7 @@
         <keyword>in</keyword>
         <keyword>else</keyword>
         <keyword>lorem</keyword>
+        <keyword>trans</keyword>
     </context>
 
     <context id="operators" style-ref="operator" extend-parent="false">
@@ -288,9 +289,9 @@
       </match>
     </context>
 
-    <context id="tpl-block" style-ref="embedded" end-at-line-end="true">
-      <start>&#123;(&#123;|&#35;|&#37;)(/?)</start>
-      <end>(&#125;|&#35;|&#37;)&#125;</end>
+    <context id="dtl-block" style-ref="embedded" end-at-line-end="true">
+      <start>&#123;(&#123;|&#37;)(/?)</start>
+      <end>(&#125;|&#37;)&#125;</end>
       <include>
         <context sub-pattern="0" where="start" style-ref="boolean"/>
         <context sub-pattern="0" where="end" style-ref="boolean"/>
@@ -314,11 +315,22 @@
       </include>
     </context>
 
-    <replace id="html:embedded-lang-hook" ref="tpl-block"/>
-
-    <context id="tpl">
+    <context id="dtl-comment-block" style-ref="comment" end-at-line-end="false">
+      <start>&#123;(&#35;)(/?)</start>
+      <end>(&#35;)&#125;</end>
       <include>
-        <context ref="tpl-block"/>
+        <context sub-pattern="0" where="start" style-ref="comment"/>
+        <context sub-pattern="0" where="end" style-ref="comment"/>
+        <context ref="c-block-comment"/>
+      </include>
+    </context>
+
+    <replace id="html:embedded-lang-hook" ref="dtl-block"/>
+
+    <context id="dtl">
+      <include>
+        <context ref="dtl-comment-block"/>
+        <context ref="dtl-block"/>
         <context ref="html:html"/>
       </include>
     </context>
