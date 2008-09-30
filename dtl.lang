@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language id="dtl" _name="Django Template Language" version="2.0" _section="Markup">
+<language id="dtl" _name="DTL" version="2.0" _section="Markup">
   <metadata>
     <property name="mimetypes">text/html;</property>
     <property name="globs">*.dtl;*.html;</property>
