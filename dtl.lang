@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language id="tpl" _name="TPL" version="2.0" _section="Scripts">
+<language id="dtl" _name="TPL" version="2.0" _section="Scripts">
   <metadata>
-    <property name="mimetypes">text/tpl;</property>
-    <property name="globs">*.tpl;*.html;</property>
+    <property name="mimetypes">text/html;</property>
+    <property name="globs">*.dtl;*.html;</property>
     <property name="line-comment-start">#</property>
-    <property name="block-comment-start">/*</property>
-    <property name="block-comment-end">*/</property>
+    <property name="block-comment-start">{#</property>
+    <property name="block-comment-end">#}</property>
   </metadata>
 
   <styles>
@@ -141,42 +141,39 @@
     </context>
 
     <context id="keywords" style-ref="keyword">
-        <keyword>block</keyword>    
-        <keyword>capture</keyword>
-        <keyword>config_load</keyword>
-        <keyword>foreach</keyword>
-        <keyword>foreachelse</keyword>
-        <keyword>if</keyword>
-        <keyword>elseif</keyword>
-        <keyword>else</keyword>
-        <keyword>include</keyword>
-        <keyword>include_php</keyword>
-        <keyword>insert</keyword>
-        <keyword>ldelim</keyword>
-        <keyword>rdelim</keyword>
-        <keyword>literal</keyword>
-        <keyword>php</keyword>
-        <keyword>section</keyword>
-        <keyword>sectionelse</keyword>
-        <keyword>strip</keyword>
-        <keyword>assign</keyword>
-        <keyword>counter</keyword>
+        <keyword>autoescape</keyword>
+        <keyword>block</keyword>
+        <keyword>endblock</keyword>
+        <keyword>comment</keyword>
         <keyword>cycle</keyword>
         <keyword>debug</keyword>
-        <keyword>eval</keyword>
-        <keyword>fetch</keyword>
-        <keyword>html_checkboxes</keyword>
-        <keyword>html_image</keyword>
-        <keyword>html_options</keyword>
-        <keyword>html_radios</keyword>
-        <keyword>html_select_date</keyword>
-        <keyword>html_select_time</keyword>
-        <keyword>html_table</keyword>
-        <keyword>mailto</keyword>
-        <keyword>math</keyword>
-        <keyword>popup</keyword>
-        <keyword>popup_init</keyword>
-        <keyword>textformat</keyword>
+        <keyword>extends</keyword>
+        <keyword>filter</keyword>
+        <keyword>firstof</keyword>
+        <keyword>for</keyword>
+        <keyword>endfor</keyword>
+        <keyword>if</keyword>
+        <keyword>endif</keyword>
+        <keyword>ifchanged</keyword>
+        <keyword>endifchanged</keyword>
+        <keyword>ifequal</keyword>
+        <keyword>endifequal</keyword>
+        <keyword>ifnotequal</keyword>
+        <keyword>endifnotequal</keyword>
+        <keyword>include</keyword>
+        <keyword>load</keyword>
+        <keyword>now</keyword>
+        <keyword>regroup</keyword>
+        <keyword>spaceless</keyword>
+        <keyword>ssi</keyword>
+        <keyword>templatetag</keyword>
+        <keyword>url</keyword>
+        <keyword>widthratio</keyword>
+        <keyword>with</keyword>
+        <keyword>endwith</keyword>
+        <keyword>in</keyword>
+        <keyword>else</keyword>
+        <keyword>lorem</keyword>
     </context>
 
     <context id="operators" style-ref="operator" extend-parent="false">
@@ -186,27 +183,70 @@
 
     <context id="filters" style-ref="filters">
       <prefix>(?i)\b</prefix> <!-- case insensitive -->
-        <keyword>capitalize</keyword>
-        <keyword>cat</keyword>
-        <keyword>count_characters</keyword>
-        <keyword>count_paragraphs</keyword>
-        <keyword>count_sentences</keyword>
-        <keyword>count_words</keyword>
-        <keyword>date_format</keyword>
+        <keyword>add</keyword>
+        <keyword>addslashes</keyword>
+        <keyword>capfirst</keyword>
+        <keyword>center</keyword>
+        <keyword>cut</keyword>
+        <keyword>date</keyword>
         <keyword>default</keyword>
+        <keyword>default_if_none</keyword>
+        <keyword>dictsort</keyword>
+        <keyword>dictsortreversed</keyword>
+        <keyword>divisibleby</keyword>
         <keyword>escape</keyword>
-        <keyword>indent</keyword>
+        <keyword>escapejs</keyword>
+        <keyword>filesizeformat</keyword>
+        <keyword>first</keyword>
+        <keyword>fix_ampersands</keyword>
+        <keyword>floatformat</keyword>
+        <keyword>force_escape</keyword>
+        <keyword>get_digit</keyword>
+        <keyword>iriencode</keyword>
+        <keyword>join</keyword>
+        <keyword>last</keyword>
+        <keyword>length</keyword>
+        <keyword>length_is</keyword>
+        <keyword>linebreaks</keyword>
+        <keyword>linebreaksbr</keyword>
+        <keyword>linenumbers</keyword>
+        <keyword>ljust</keyword>
         <keyword>lower</keyword>
-        <keyword>nl2br</keyword>
-        <keyword>regex_replace</keyword>
-        <keyword>replace</keyword>
-        <keyword>spacify</keyword>
-        <keyword>string_format</keyword>
-        <keyword>strip</keyword>
-        <keyword>strip_tags</keyword>
-        <keyword>truncate</keyword>
+        <keyword>make_list</keyword>
+        <keyword>phone2numeric</keyword>
+        <keyword>pluralize</keyword>
+        <keyword>pprint</keyword>
+        <keyword>random</keyword>
+        <keyword>removetags</keyword>
+        <keyword>rjust</keyword>
+        <keyword>safe</keyword>
+        <keyword>slice</keyword>
+        <keyword>slugify</keyword>
+        <keyword>stringformat</keyword>
+        <keyword>striptags</keyword>
+        <keyword>time</keyword>
+        <keyword>timesince</keyword>
+        <keyword>timeuntil</keyword>
+        <keyword>title</keyword>
+        <keyword>truncatewords</keyword>
+        <keyword>truncatewords_html</keyword>
+        <keyword>unordered_list</keyword>
         <keyword>upper</keyword>
+        <keyword>urlencode</keyword>
+        <keyword>urlize</keyword>
+        <keyword>urlizetrunc</keyword>
+        <keyword>wordcount</keyword>
         <keyword>wordwrap</keyword>
+        <keyword>yesno</keyword>
+        <keyword>apnumber</keyword>
+        <keyword>intcomma</keyword>
+        <keyword>intword</keyword>
+        <keyword>ordinal</keyword>
+        <keyword>naturalday</keyword>
+        <keyword>textile</keyword>
+        <keyword>markdown</keyword>
+        <keyword>restructuredtext</keyword>
+
     </context>
 
     <context id="boolean" style-ref="boolean">
