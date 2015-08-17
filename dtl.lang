@@ -175,6 +175,7 @@
         <keyword>else</keyword>
         <keyword>lorem</keyword>
         <keyword>trans</keyword>
+        <keyword>static</keyword>
     </context>
 
     <context id="operators" style-ref="operator" extend-parent="false">
