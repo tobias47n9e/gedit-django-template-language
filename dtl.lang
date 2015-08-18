@@ -143,40 +143,41 @@
       <prefix>\s</prefix>
         <keyword>autoescape</keyword>
         <keyword>block</keyword>
-        <keyword>endblock</keyword>
         <keyword>comment</keyword>
+        <keyword>csrf_token</keyword>
         <keyword>cycle</keyword>
         <keyword>debug</keyword>
+        <keyword>else</keyword>
+        <keyword>endblock</keyword>
+        <keyword>endfor</keyword>
+        <keyword>endif</keyword>
+        <keyword>endifchanged</keyword>
+        <keyword>endifequal</keyword>
+        <keyword>endifnotequal</keyword>
+        <keyword>endwith</keyword>
         <keyword>extends</keyword>
         <keyword>filter</keyword>
         <keyword>firstof</keyword>
         <keyword>for</keyword>
-        <keyword>endfor</keyword>
         <keyword>if</keyword>
-        <keyword>endif</keyword>
         <keyword>ifchanged</keyword>
-        <keyword>endifchanged</keyword>
         <keyword>ifequal</keyword>
-        <keyword>endifequal</keyword>
         <keyword>ifnotequal</keyword>
-        <keyword>endifnotequal</keyword>
+        <keyword>in</keyword>
         <keyword>include</keyword>
         <keyword>load</keyword>
+        <keyword>lorem</keyword>
         <keyword>now</keyword>
         <keyword>regroup</keyword>
         <keyword>spaceless</keyword>
         <keyword>ssi</keyword>
+        <keyword>static</keyword>
+        <keyword>staticfiles</keyword>
         <keyword>templatetag</keyword>
+        <keyword>trans</keyword>
         <keyword>url</keyword>
         <keyword>widthratio</keyword>
         <keyword>with</keyword>
-        <keyword>endwith</keyword>
-        <keyword>in</keyword>
-        <keyword>else</keyword>
-        <keyword>lorem</keyword>
-        <keyword>trans</keyword>
-        <keyword>static</keyword>
-        <keyword>csrf_token</keyword>
     </context>
 
     <context id="operators" style-ref="operator" extend-parent="false">
@@ -187,6 +188,7 @@
       <prefix>\s</prefix>
         <keyword>add</keyword>
         <keyword>addslashes</keyword>
+        <keyword>apnumber</keyword>
         <keyword>capfirst</keyword>
         <keyword>center</keyword>
         <keyword>cut</keyword>
@@ -204,6 +206,8 @@
         <keyword>floatformat</keyword>
         <keyword>force_escape</keyword>
         <keyword>get_digit</keyword>
+        <keyword>intcomma</keyword>
+        <keyword>intword</keyword>
         <keyword>iriencode</keyword>
         <keyword>join</keyword>
         <keyword>last</keyword>
@@ -215,17 +219,22 @@
         <keyword>ljust</keyword>
         <keyword>lower</keyword>
         <keyword>make_list</keyword>
+        <keyword>markdown</keyword>
+        <keyword>naturalday</keyword>
+        <keyword>ordinal</keyword>
         <keyword>phone2numeric</keyword>
         <keyword>pluralize</keyword>
         <keyword>pprint</keyword>
         <keyword>random</keyword>
         <keyword>removetags</keyword>
+        <keyword>restructuredtext</keyword>
         <keyword>rjust</keyword>
         <keyword>safe</keyword>
         <keyword>slice</keyword>
         <keyword>slugify</keyword>
         <keyword>stringformat</keyword>
         <keyword>striptags</keyword>
+        <keyword>textile</keyword>
         <keyword>time</keyword>
         <keyword>timesince</keyword>
         <keyword>timeuntil</keyword>
@@ -240,14 +249,6 @@
         <keyword>wordcount</keyword>
         <keyword>wordwrap</keyword>
         <keyword>yesno</keyword>
-        <keyword>apnumber</keyword>
-        <keyword>intcomma</keyword>
-        <keyword>intword</keyword>
-        <keyword>ordinal</keyword>
-        <keyword>naturalday</keyword>
-        <keyword>textile</keyword>
-        <keyword>markdown</keyword>
-        <keyword>restructuredtext</keyword>
     </context>
 
     <context id="boolean" style-ref="boolean">
