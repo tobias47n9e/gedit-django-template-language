@@ -182,7 +182,7 @@
     </context>
 
     <context id="filters" style-ref="filters">
-      <prefix>(?i)\b</prefix> <!-- case insensitive -->
+      <prefix>\s</prefix>
         <keyword>add</keyword>
         <keyword>addslashes</keyword>
         <keyword>capfirst</keyword>
