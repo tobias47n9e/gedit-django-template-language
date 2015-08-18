@@ -140,6 +140,7 @@
     </context>
 
     <context id="keywords" style-ref="keyword">
+      <prefix>\s</prefix>
         <keyword>autoescape</keyword>
         <keyword>block</keyword>
         <keyword>endblock</keyword>
