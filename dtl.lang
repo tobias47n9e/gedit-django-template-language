@@ -29,7 +29,6 @@
 
   <definitions>
 
-
     <!-- Html comments are more permissive than xml comments -->
     <context id="comment" style-ref="comment">
         <start>&lt;!--</start>
@@ -179,9 +178,8 @@
     </context>
 
     <context id="operators" style-ref="operator" extend-parent="false">
-      <match>[-.~^@,;:/%|\=\+\*\!\?&amp;&lt;&gt;()]</match>
+      <match>[-~^@,;:/%|\=\+\*\!\?&amp;&lt;&gt;()]</match>
     </context>
-
 
     <context id="filters" style-ref="filters">
       <prefix>(?i)\b</prefix> <!-- case insensitive -->
@@ -248,7 +246,6 @@
         <keyword>textile</keyword>
         <keyword>markdown</keyword>
         <keyword>restructuredtext</keyword>
-
     </context>
 
     <context id="boolean" style-ref="boolean">

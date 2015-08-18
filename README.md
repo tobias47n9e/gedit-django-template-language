@@ -12,4 +12,4 @@ Just copy the `dtl.lang` file into this directory:
 
      ~/.local/share/gtksourceview-3.0/language-specs/
 
-All files that end in `*.dtl` should be automaticall highlighted. For other file extensions you might need to choose "Django Template" manually from the list of languages.
+All files that end in `*.dtl` should be automatically highlighted. For other file extensions you might need to choose "Django Template" manually from the list of languages.
