@@ -176,6 +176,7 @@
         <keyword>lorem</keyword>
         <keyword>trans</keyword>
         <keyword>static</keyword>
+        <keyword>csrf_token</keyword>
     </context>
 
     <context id="operators" style-ref="operator" extend-parent="false">
