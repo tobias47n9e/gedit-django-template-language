@@ -141,6 +141,7 @@
 
     <context id="keywords" style-ref="keyword">
       <prefix>\s</prefix>
+        <keyword>and</keyword>
         <keyword>autoescape</keyword>
         <keyword>block</keyword>
         <keyword>comment</keyword>
@@ -148,7 +149,9 @@
         <keyword>cycle</keyword>
         <keyword>debug</keyword>
         <keyword>else</keyword>
+        <keyword>endautoescape</keyword>
         <keyword>endblock</keyword>
+        <keyword>endcomment</keyword>
         <keyword>endfor</keyword>
         <keyword>endif</keyword>
         <keyword>endifchanged</keyword>
@@ -167,7 +170,9 @@
         <keyword>include</keyword>
         <keyword>load</keyword>
         <keyword>lorem</keyword>
+        <keyword>not</keyword>
         <keyword>now</keyword>
+        <keyword>or</keyword>
         <keyword>regroup</keyword>
         <keyword>spaceless</keyword>
         <keyword>ssi</keyword>
