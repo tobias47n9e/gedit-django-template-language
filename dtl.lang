@@ -145,6 +145,7 @@
         <keyword>as</keyword>
         <keyword>autoescape</keyword>
         <keyword>block</keyword>
+        <keyword>blocktrans</keyword>
         <keyword>comment</keyword>
         <keyword>csrf_token</keyword>
         <keyword>cycle</keyword>
@@ -154,6 +155,7 @@
         <keyword>empty</keyword>
         <keyword>endautoescape</keyword>
         <keyword>endblock</keyword>
+        <keyword>endblocktrans</keyword>
         <keyword>endcomment</keyword>
         <keyword>endfilter</keyword>
         <keyword>endfor</keyword>
