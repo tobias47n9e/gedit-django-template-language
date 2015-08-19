@@ -240,6 +240,7 @@
         <keyword>timesince</keyword>
         <keyword>timeuntil</keyword>
         <keyword>title</keyword>
+        <keyword>truncatechars</keyword>
         <keyword>truncatewords</keyword>
         <keyword>truncatewords_html</keyword>
         <keyword>unordered_list</keyword>
