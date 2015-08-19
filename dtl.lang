@@ -153,6 +153,7 @@
         <keyword>endautoescape</keyword>
         <keyword>endblock</keyword>
         <keyword>endcomment</keyword>
+        <keyword>endfilter</keyword>
         <keyword>endfor</keyword>
         <keyword>endif</keyword>
         <keyword>endifchanged</keyword>
