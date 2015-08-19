@@ -163,6 +163,8 @@
         <keyword>endifchanged</keyword>
         <keyword>endifequal</keyword>
         <keyword>endifnotequal</keyword>
+        <keyword>endspaceless</keyword>
+        <keyword>endverbatim</keyword>
         <keyword>endwith</keyword>
         <keyword>extends</keyword>
         <keyword>filter</keyword>
@@ -187,6 +189,7 @@
         <keyword>templatetag</keyword>
         <keyword>trans</keyword>
         <keyword>url</keyword>
+        <keyword>verbatim</keyword>
         <keyword>widthratio</keyword>
         <keyword>with</keyword>
     </context>
