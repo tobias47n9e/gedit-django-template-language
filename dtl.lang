@@ -149,6 +149,7 @@
         <keyword>csrf_token</keyword>
         <keyword>cycle</keyword>
         <keyword>debug</keyword>
+        <keyword>elif</keyword>
         <keyword>else</keyword>
         <keyword>endautoescape</keyword>
         <keyword>endblock</keyword>
