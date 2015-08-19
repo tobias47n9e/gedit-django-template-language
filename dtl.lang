@@ -170,6 +170,9 @@
         <keyword>filter</keyword>
         <keyword>firstof</keyword>
         <keyword>for</keyword>
+        <keyword>from</keyword>
+        <keyword>get_media_prefix</keyword>
+        <keyword>get_static_prefix</keyword>
         <keyword>if</keyword>
         <keyword>ifchanged</keyword>
         <keyword>ifequal</keyword>
