@@ -9,7 +9,7 @@
   </metadata>
 
   <styles>
-    <style id="embedded"         _name="Comment" map-to="def:embedded"/>
+    <style id="embedded"        _name="Comment" map-to="def:embedded"/>
     <style id="comment"         _name="Comment" map-to="def:comment"/>
     <style id="error"           _name="Error" map-to="def:error"/>
     <style id="variable"        _name="Variable" map-to="def:identifier"/>
@@ -142,6 +142,7 @@
     <context id="keywords" style-ref="keyword">
       <prefix>\s</prefix>
         <keyword>and</keyword>
+        <keyword>as</keyword>
         <keyword>autoescape</keyword>
         <keyword>block</keyword>
         <keyword>comment</keyword>
