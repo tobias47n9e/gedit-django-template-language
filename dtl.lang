@@ -134,6 +134,10 @@
         <keyword>autoescape</keyword>
         <keyword>block</keyword>
         <keyword>blocktrans</keyword>
+        <keyword>closeblock</keyword>
+        <keyword>closebrace</keyword>
+        <keyword>closecomment</keyword>
+        <keyword>closevariable</keyword>
         <keyword>comment</keyword>
         <keyword>csrf_token</keyword>
         <keyword>cycle</keyword>
@@ -171,6 +175,12 @@
         <keyword>lorem</keyword>
         <keyword>not</keyword>
         <keyword>now</keyword>
+        <keyword>on</keyword>
+        <keyword>off</keyword>
+        <keyword>openblock</keyword>
+        <keyword>openbrace</keyword>
+        <keyword>opencomment</keyword>
+        <keyword>openvariable</keyword>
         <keyword>or</keyword>
         <keyword>regroup</keyword>
         <keyword>spaceless</keyword>
