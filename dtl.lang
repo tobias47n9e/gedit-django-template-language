@@ -17,7 +17,7 @@
     <style id="here-doc"        _name="Heredoc" map-to="def:string"/>
     <style id="here-doc-bound"  _name="Heredoc Bound" map-to="def:keyword"/>
     <style id="keyword"         _name="Keyword" map-to="def:keyword"/>
-    <style id="filters"         _name="Null Value" map-to="def:identifier"/>
+    <style id="filters"         _name="Null Value" map-to="def:function"/>
     <style id="boolean"         _name="Boolean value" map-to="def:boolean"/>
     <style id="floating-point"  _name="Floating point number" map-to="def:floating-point"/>
     <style id="decimal"         _name="Decimal number" map-to="def:decimal"/>
