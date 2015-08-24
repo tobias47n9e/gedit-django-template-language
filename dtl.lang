@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ This file is part of GtkSourceView
+
+ Copyright (C) 2008 Emmanuel Vaïsse <evaisse@gmail.com>
+ Copyright (C) 2010 Patryk Zawadzki <patrys@pld-linux.org
+ Copyright (C) 2015 Tobias Schönberg <tobias47n9e@gmail.com>
+
+ GtkSourceView is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+
+ GtkSourceView is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+-->
 <language id="dtl" _name="Django Template" version="2.0" _section="Markup">
   <metadata>
     <property name="mimetypes">text/html;</property>
@@ -129,6 +152,7 @@
 
     <context id="keywords" style-ref="keyword">
       <prefix>\s</prefix>
+      <suffix>\b</suffix>
         <keyword>and</keyword>
         <keyword>as</keyword>
         <keyword>autoescape</keyword>
@@ -267,8 +291,8 @@
 
     <context id="boolean" style-ref="boolean">
       <prefix>(?i)\b</prefix> <!-- case insensitive -->
-      <keyword>false</keyword>
-      <keyword>true</keyword>
+        <keyword>false</keyword>
+        <keyword>true</keyword>
     </context>
 
     <context id="float" style-ref="floating-point">
