@@ -7,9 +7,14 @@ GNU GPL v3
 # Supported programs
 Should work for all programs that use gtksourceview (for example Gedit and Gnome-Builder).
 
-#Installation
+# Installation
 Just copy the `dtl.lang` file into this directory:
 
      ~/.local/share/gtksourceview-3.0/language-specs/
 
 All files that end in `*.dtl` should be automatically highlighted. For other file extensions you might need to choose "Django Template" manually from the list of languages.
+
+# Integration into GtkSourceView
+
+See: https://bugzilla.gnome.org/show_bug.cgi?id=617136
+
