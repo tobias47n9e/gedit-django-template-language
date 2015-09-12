@@ -32,7 +32,6 @@
   </metadata>
 
   <styles>
-    <style id="embedded"        _name="Comment" map-to="def:embedded"/>
     <style id="comment"         _name="Comment" map-to="def:comment"/>
     <style id="error"           _name="Error" map-to="def:error"/>
     <style id="escape"          _name="Escaped Character" map-to="def:special-char"/>
@@ -278,7 +277,7 @@
       </match>
     </context>
 
-    <context id="dtl-block" style-ref="embedded" end-at-line-end="true">
+    <context id="dtl-block" end-at-line-end="true">
       <start>&#123;(&#123;|&#37;)(/?)</start>
       <end>(&#125;|&#37;)&#125;</end>
       <include>
