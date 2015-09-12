@@ -70,10 +70,6 @@
       <match>\*/(?!\*)</match>
     </context>
 
-    <context id="escape" style-ref="escape">
-      <match>\\((\\|"|n|t|\$|r)|[0-7]{1,3}|x[0-9a-fA-F]{1,2})</match>
-    </context>
-
     <context id="string-var">
       <include>
         <context id="curly-var" style-ref="identifier" >
@@ -97,7 +93,6 @@
       <start>"</start>
       <end>"</end>
       <include>
-        <context ref="escape"/>
         <context ref="string-var"/>
         <context ref="def:line-continue"/>
       </include>
@@ -120,7 +115,6 @@
       <include>
         <context sub-pattern="0" where="start" style-ref="here-doc-bound"/>
         <context sub-pattern="1" where="end" style-ref="here-doc-bound"/>
-        <context ref="escape"/>
         <context ref="string-var"/>
         <context ref="def:line-continue"/>
       </include>
