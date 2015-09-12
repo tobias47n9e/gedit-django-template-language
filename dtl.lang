@@ -296,7 +296,7 @@
       </include>
     </context>
 
-    <context id="dtl-comment-block" style-ref="comment" end-at-line-end="false">
+    <context id="dtl-comment-block" style-ref="comment" end-at-line-end="true">
       <start>&#123;(&#35;)(/?)</start>
       <end>(&#35;)&#125;</end>
       <include>
