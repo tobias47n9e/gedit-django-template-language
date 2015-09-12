@@ -114,15 +114,6 @@
       </include>
     </context>
 
-    <context id="backtick-string" style-ref="string" extend-parent="false">
-      <start>`</start>
-      <end>`</end>
-      <include>
-        <context ref="escape"/>
-        <context ref="def:line-continue"/>
-      </include>
-    </context>
-
     <context id="here-doc-string" style-ref="here-doc" extend-parent="true">
       <start>(&lt;&lt;&lt;)\s?([a-zA-Z_][a-zA-Z0-9_]*)</start>
       <end>^(\%{2@start});?$</end>
@@ -323,7 +314,6 @@
         <context ref="bash-line-comment"/>
         <context ref="double-quoted-string"/>
         <context ref="single-quoted-string"/>
-        <context ref="backtick-string"/>
         <context ref="here-doc-string"/>
         <context ref="keywords"/>
         <context ref="filters"/>
