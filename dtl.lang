@@ -59,30 +59,10 @@
       <match>\*/(?!\*)</match>
     </context>
 
-    <context id="string-var">
-      <include>
-        <context id="curly-var" style-ref="identifier" >
-          <start>{(?=\$)</start>
-          <end>}</end>
-          <include>
-            <context ref="string-var"/>
-          </include>
-        </context>
-        <context id="backwards-curly-var" style-ref="boolean">
-          <start>\${</start>
-          <end>}</end>
-          <include>
-            <context ref="string-var"/>
-          </include>
-        </context>
-      </include>
-    </context>
-
     <context id="double-quoted-string" style-ref="string">
       <start>"</start>
       <end>"</end>
       <include>
-        <context ref="string-var"/>
         <context ref="def:line-continue"/>
       </include>
     </context>
